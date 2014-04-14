@@ -1,4 +1,4 @@
-define(require) {
+define(function(require) {
     require('jquery');
     require('jquery.cookie');
 
