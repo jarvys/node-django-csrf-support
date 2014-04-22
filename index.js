@@ -31,4 +31,6 @@ define(function(require) {
             }
         }
     });
+
+    return $.cookie('csrftoken');
 });
