@@ -1,5 +1,5 @@
 require('jquery');
-var Cookies = require('cookies');
+var Cookies = require('cookies-js');
 
 var token;
 
