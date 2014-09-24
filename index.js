@@ -1,6 +1,12 @@
-define(function(require) {
-    require('jquery');
-    require('jquery.cookie');
+require('jquery');
+require('jquery.cookie');
+
+var token;
+
+module.exports = function() {
+    if (token) {
+        return token
+    }
 
     function csrfSafeMethod(method) {
         // these HTTP methods do not require CSRF protection
@@ -17,8 +23,8 @@ define(function(require) {
         // Allow absolute or scheme relative URLs to same origin
         return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
             (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
-        // or any other URL that isn't scheme relative or absolute i.e relative.
-        !(/^(\/\/|http:|https:).*/.test(url));
+            // or any other URL that isn't scheme relative or absolute i.e relative.
+            !(/^(\/\/|http:|https:).*/.test(url));
     }
 
     $.ajaxSetup({
@@ -32,5 +38,6 @@ define(function(require) {
         }
     });
 
-    return $.cookie('csrftoken');
-});
+    token = $.cookie('csrftoken');
+    return token
+};

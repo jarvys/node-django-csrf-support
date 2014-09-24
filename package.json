@@ -1,0 +1,19 @@
+{
+  "name": "node-django-csrf-support",
+  "version": "0.0.0",
+  "description": "> Set a csrftoken header in AJAX requests using jQuery every time in Django. > Based on the document [csrf in Django](https://docs.djangoproject.com/en/dev/ref/contrib/csrf/). > Only compatible with requirejs right now.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jarvys/node-django-csrf-support.git"
+  },
+  "author": "Jarvys <yuhan534@126.com> (https://jarvys.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarvys/node-django-csrf-support/issues"
+  },
+  "homepage": "https://github.com/jarvys/node-django-csrf-support"
+}
