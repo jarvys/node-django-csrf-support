@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jarvys/node-django-csrf-support/issues"
   },
-  "homepage": "https://github.com/jarvys/node-django-csrf-support"
+  "homepage": "https://github.com/jarvys/node-django-csrf-support",
+  "dependencies": {
+    "jquery": "^2.1.1"
+  }
 }
