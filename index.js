@@ -1,4 +1,3 @@
-require('jquery');
 var Cookies = require('cookies-js');
 
 var token;
