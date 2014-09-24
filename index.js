@@ -1,5 +1,5 @@
 require('jquery');
-require('jquery.cookie');
+var Cookies = require('cookies');
 
 var token;
 
@@ -33,11 +33,11 @@ module.exports = function() {
                 // Send the token to same-origin, relative URLs only.
                 // Send the token only if the method warrants CSRF protection
                 // Using the CSRFToken value acquired earlier
-                xhr.setRequestHeader("X-CSRFToken", $.cookie('csrftoken'));
+                xhr.setRequestHeader("X-CSRFToken", Cookies.get('csrftoken'));
             }
         }
     });
 
-    token = $.cookie('csrftoken');
+    token = Cookies.get('csrftoken');
     return token
 };

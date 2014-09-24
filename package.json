@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/jarvys/node-django-csrf-support",
   "dependencies": {
-    "jquery": "^2.1.1"
+    "cookies-js": "^0.4.0"
   }
 }
